@@ -1,0 +1,39 @@
+article ol li,
+article ul li,
+article h1 {
+  color: var(--fonteAlternativa);
+}
+
+main {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+article ol li a,
+article ul li a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--fonteAlternativa);
+}
+
+article ol li,
+article ul li {
+  width: fit-content;
+  transition: all ease 0.3s;
+}
+
+article ol li:hover,
+article ul li:hover {
+  transform: scale(var(--scaleHover));
+  transition: all ease 0.3s;
+}
+
+section img {
+  width: 700px;
+}
+
+article ~ article {
+  margin-top: 3rem;
+}

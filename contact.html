@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Início</title>
+  </head>
+  <body>
+    <button id="page-mode" class="page-mode" onclick="toggleMode()">
+      <img src="./assets/icons/sun.svg" alt="Toggle light mode" />
+    </button>
+    <!--
+    Página contendo um formulário estruturado para contato.
+    -->
+    <header>
+      <nav>
+        <h2>BERNARDO BULIK</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./curriculum.html">Currículo</a></li>
+          <li><a href="./about.html">Sobre mim</a></li>
+          <li><a href="./contact.html" class="active">Contato</a></li>
+          <li><a href="./receitas.html">Receitas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <form>
+            <h1>Ficarei feliz em receber seu contato</h1>
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              required
+              placeholder="Digite seu nome"
+            />
+            <label for="Assunto">Assunto:</label>
+            <input
+              type="text"
+              name="assunto"
+              id="assunto"
+              required
+              placeholder="Digite o assunto"
+            />
+            <label for="proposta">Proposta:</label>
+            <textarea name="proposta" id="proposta"></textarea>
+            <div class="form-footer">
+              <button type="submit" id="envia" onclick="enviaContato()">
+                Enviar
+              </button>
+              <button type="reset">Limpar</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <script src="./js/general.js"></script>
+    <script>
+      const nome = document.getElementById("nome");
+      const assunto = document.getElementById("assunto");
+      const proposta = document.getElementById("proposta");
+      function enviaContato() {
+        if (nome.value != "" && assunto.value != "" && proposta.value != "") {
+          alert("Proposta enviada com sucesso! Aguarde o meu retorno.");
+        } else {
+          alert("Preencha todo o formulário para enviar a proposta!");
+        }
+      }
+    </script>
+  </body>
+</html>

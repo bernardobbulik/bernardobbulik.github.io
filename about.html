@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>Início</title>
+  </head>
+  <body>
+    <button id="page-mode" class="page-mode" onclick="toggleMode()">
+      <img src="./assets/icons/sun.svg" alt="Toggle light mode" />
+    </button>
+    <!--
+    - Texto narrativo sobre sua trajetória acadêmica, profissional e interesses.
+    - Pelo menos uma imagem representativa (armazenada na pasta /assets)
+    -->
+    <header>
+      <nav>
+        <h2>BERNARDO BULIK</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./curriculum.html">Currículo</a></li>
+          <li><a href="./about.html" class="active">Sobre mim</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="./receitas.html">Receitas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <img
+            class="has-box-shadow"
+            src="./assets/img/me.JPG"
+            alt="Bernardo Bulik"
+          />
+          <div class="image-footer">
+            <a
+              target="_blank"
+              href="https://br.linkedin.com/in/bernardoborrinbulik"
+              ><img
+                id="linkedin"
+                src="./assets/icons/linkedin-light.svg"
+                alt="Linkedin"
+              />
+            </a>
+            <a target="_blank" href="https://github.com/bernardobbulik">
+              <img id="github" src="./assets/icons/github.svg" alt="Github" />
+            </a>
+          </div>
+        </article>
+        <article class="about-text">
+          <p>
+            Sou estudante e desenvolvedor de software, apaixonado por tecnologia
+            e pela criação de soluções que resolvem problemas reais. Minha
+            trajetória na área começou através da curiosidade sobre como
+            sistemas funcionam e evoluiu para um interesse cada vez maior por
+            desenvolvimento web, arquitetura de software e inovação.
+          </p>
+          <p>
+            Concluí o Ensino Médio no Colégio Tiradentes da Brigada Militar e
+            atualmente sou bolsista na Universidade de Passo Fundo. Durante
+            minha formação, busco constantemente aprimorar meus conhecimentos
+            por meio de estudos, projetos acadêmicos e experiências práticas.
+          </p>
+          <p>
+            Atuo principalmente com desenvolvimento web utilizando PHP,
+            JavaScript, HTML, CSS e SQL, com foco na construção de sistemas
+            empresariais, aplicações SaaS e soluções voltadas para gestão. Tenho
+            grande interesse por Desenvolvimento Back-End, Engenharia de
+            Software e arquitetura de sistemas, áreas nas quais busco me
+            especializar continuamente.
+          </p>
+          <p>
+            Para o futuro, pretendo expandir minha atuação para Engenharia de
+            IA, Machine Learning e desenvolvimento com .NET, aprofundando meus
+            conhecimentos em tecnologias de larga escala e sistemas de alta
+            performance. Meu objetivo profissional é atuar em projetos de grande
+            impacto, evoluir para posições de liderança técnica e, futuramente,
+            tornar-me Tech Lead em uma grande empresa de tecnologia.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="./js/general.js"></script>
+  </body>
+</html>

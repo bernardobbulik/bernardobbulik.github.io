@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
+
+:root {
+  --primaria: 255, 255, 255;
+  --secundaria: 97, 97, 97;
+  --fonte: #fff;
+  --fonteAlternativa: #fff;
+  --bgFundo: #000;
+  --bgImage: url("../assets/bg.jpeg");
+  --postColor: 255, 255, 255;
+  --scaleHover: 1.1;
+  --ligthOpacity: 0;
+  --navOpacity: 0.1;
+  --hrOpacity: 0.2;
+  --toggleBackground: 255, 255, 255;
+  --boxShadow: 255, 255, 255;
+  --boxShadowOpacity: 0.1;
+}
+
+.light-mode {
+  --primaria: 0, 0, 0;
+  --secundaria: 97, 97, 97;
+  --fonte: #fff;
+  --fonteAlternativa: #000;
+  --bgFundo: #fff;
+  --bgImage: url("../assets/bg-light.png");
+  --postColor: 97, 97, 97;
+  --scaleHover: 1.1;
+  --lightOpacity: 1;
+  --navOpacity: 0.4;
+  --hrOpacity: 0.6;
+  --toggleBackground: 0, 0, 0;
+  --boxShadow: 0, 0, 0;
+  --boxShadowOpacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100dvh;
+}
+
+body {
+  background-color: var(--bgFundo);
+  min-height: 100vh;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/*================= NAV =================*/
+header h2 {
+  font-size: 1.7rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1.2rem;
+  color: var(--fonte);
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(var(--primaria), var(--navOpacity));
+}
+
+nav li {
+  display: inline-block;
+  margin: 0rem 2rem;
+  transition: all ease 0.3s;
+}
+
+nav li:hover {
+  transform: scale(var(--scaleHover));
+  transition: all ease 0.3s;
+}
+
+nav li > a {
+  color: var(--fonte);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav li > .active {
+  font-weight: bold;
+}
+
+/*================= DARK/LIGHT MODE =================*/
+.page-mode {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  padding: 1.1rem;
+  z-index: 9999;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(var(--toggleBackground));
+  transition: all ease 0.2s;
+}
+
+.page-mode:hover {
+  transform: scale(var(--scaleHover));
+  transition: all ease 0.2s;
+}
+
+/*================= BOX-SHADOW IMAGE =================*/
+.has-box-shadow {
+  box-shadow:
+    0 4px 16px 0 rgba(var(--boxShadow), var(--boxShadowOpacity)),
+    0 6px 50px 0 rgba(255, 255, 255, 0.1);
+}

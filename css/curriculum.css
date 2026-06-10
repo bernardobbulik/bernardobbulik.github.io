@@ -1,0 +1,50 @@
+main {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  width: 40%;
+}
+
+article ~ article {
+  margin-top: 3rem;
+}
+
+article {
+  width: fit-content;
+  color: var(--fonteAlternativa);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+table,
+article ul {
+  margin-left: 2rem;
+}
+
+article ul li {
+  font-size: 1.2rem;
+  list-style-type: square;
+}
+
+article ul li ~ ul li {
+  list-style-type: circle;
+}
+
+th,
+td {
+  color: var(--fonteAlternativa);
+  border: 1px solid var(--fonteAlternativa);
+  padding: 5px;
+}
+
+section img {
+  width: 700px;
+}

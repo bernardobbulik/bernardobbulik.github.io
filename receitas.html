@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/receitas.css" />
+    <title>Receitas</title>
+  </head>
+  <body>
+    <button id="page-mode" class="page-mode" onclick="toggleMode()">
+      <img src="./assets/icons/sun.svg" alt="Toggle light mode" />
+    </button>
+    <!--
+    - Uma lista de receitas de sua preferência.
+    - Obrigatório: Criar uma subpágina específica para Mousse de Maracujá,
+      detalhando ingredientes e modo de preparo de forma bem estruturada semanticamente.
+    -->
+    <header>
+      <nav>
+        <h2>BERNARDO BULIK</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./curriculum.html">Currículo</a></li>
+          <li><a href="./about.html">Sobre mim</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="./receitas.html" class="active">Receitas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h1>Algumas das minhas receitas favoritas</h1>
+          <ol>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.tudogostoso.com.br/receita/198886-lasanha-de-frango-com-queijo.html"
+                >Lasanha de frango</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.receitasnestle.com.br/receitas/torta-de-maca"
+                >Torta de maçã</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.tudogostoso.com.br/receita/53915-estrogonofe-de-carne-simples.html"
+                >Estrogonofe de carne</a
+              >
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <h1>Menção honrosa</h1>
+          <ul>
+            <li>
+              <a target="_blank" href="./receita-maracuja.html"
+                >Mousse de maracujá</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <img
+          class="has-box-shadow"
+          src="./assets/img/receitas.png"
+          alt="Imagem Conceitual Dark"
+        />
+      </section>
+    </main>
+    <script src="./js/general.js"></script>
+  </body>
+</html>

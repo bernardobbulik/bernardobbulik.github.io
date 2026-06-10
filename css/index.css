@@ -1,0 +1,116 @@
+aside {
+  position: absolute;
+  left: 3rem;
+  top: 40%;
+  color: var(--fonte);
+  font-size: 3.5rem;
+}
+
+h1 ~ h1 {
+  color: rgba(var(--primaria), 0.4);
+  margin-top: 0;
+}
+
+aside > h1 {
+  font-size: 10rem;
+  line-height: 0.8;
+}
+
+h1 ~ a {
+  font-size: 2rem;
+  margin-left: 12px;
+  color: var(--fonte);
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: rgba(var(--secundaria), var(--lightOpacity));
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+h1 ~ a:hover {
+  font-size: 2.2rem;
+  transition: all ease 0.3s;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to bottom, transparent 65%, var(--bgFundo) 100%),
+    var(--bgImage);
+  background-size: cover;
+  background-position: center;
+}
+
+.postagens {
+  margin-top: 10rem;
+  color: rgb(var(--postColor));
+  background-color: rgb(--bgFundo);
+  padding: 4rem 3rem;
+}
+
+h1 ~ hr {
+  color: rgba(var(--postColor), var(--hrOpacity));
+  font-size: 1rem;
+}
+
+hr ~ .postagens-body {
+  margin-top: 3rem;
+}
+
+.postagens-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.post {
+  background-color: rgba(var(--primaria), var(--navOpacity));
+  padding: 1.5rem;
+  border-radius: 30px;
+  transition: all ease 0.3s;
+}
+
+.post img {
+  opacity: 0.9;
+}
+
+.post > a {
+  text-decoration: none;
+}
+
+.post:hover {
+  transform: scale(var(--scaleHover));
+  box-shadow:
+    0 4px 16px 0 rgba(255, 255, 255, 0.2),
+    0 6px 50px 0 rgba(255, 255, 255, 0.1);
+  transition: all ease 0.3s;
+}
+
+.post h2 {
+  color: var(--fonte);
+}
+
+.post p {
+  color: var(--fonte);
+}
+
+.post p ~ p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.post > img {
+  border-radius: 15px;
+}
+
+.post-footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+
+.post-info {
+  flex: 5;
+}

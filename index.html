@@ -1,9 +1,117 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASDASDASD</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Início</title>
   </head>
-  <body></body>
+  <body>
+    <button id="page-mode" class="page-mode" onclick="toggleMode()">
+      <img src="./assets/icons/sun.svg" alt="Toggle light mode" />
+    </button>
+    <!--
+      - Página inicial com uma breve introdução ao blog.
+      - Uma seção de “Últimas Postagens” (pode ser estática, simulando um feed).
+    -->
+    <header>
+      <nav>
+        <h2>BERNARDO BULIK</h2>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="./curriculum.html">Currículo</a></li>
+          <li><a href="./about.html">Sobre mim</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="./receitas.html">Receitas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <aside>
+          <h1>FULLSTACK</h1>
+          <h1>DEVELOPER</h1>
+          <a href="#postagens"
+            >Veja meu blog<img
+              class="seta-baixo"
+              src="./assets/icons/arrow-down.svg"
+          /></a>
+        </aside>
+      </section>
+      <section class="postagens" id="postagens">
+        <h1>Últimas postagens</h1>
+        <hr />
+        <article class="postagens-body">
+          <div class="post">
+            <a href="./curriculum.html">
+              <img
+                id="post1"
+                src="./assets/img/posts/post1.png"
+                alt="Currículo"
+                width="350px"
+              />
+              <div class="post-footer">
+                <div class="post-info">
+                  <h2>Currículo</h2>
+                  <p>Veja minhas formações.</p>
+                  <p>01/06/2026</p>
+                </div>
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="Abrir"
+                  width="50px"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="post">
+            <a href="./about.html">
+              <img
+                id="post2"
+                src="./assets/img/posts/post2.png"
+                alt="Sobre mim"
+                width="350px"
+              />
+              <div class="post-footer">
+                <div class="post-info">
+                  <h2>Sobre mim</h2>
+                  <p>Conheça minha história.</p>
+                  <p>01/06/2026</p>
+                </div>
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="Abrir"
+                  width="50px"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="post">
+            <a href="./contact.html">
+              <img
+                id="post3"
+                src="./assets/img/posts/post3.png"
+                alt="Contato"
+                width="350px"
+              />
+              <div class="post-footer">
+                <div class="post-info">
+                  <h2>Contato</h2>
+                  <p>Faça sua proposta.</p>
+                  <p>01/06/2026</p>
+                </div>
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="Abrir"
+                  width="50px"
+                />
+              </div>
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./js/general.js"></script>
+  </body>
 </html>
