@@ -11,6 +11,11 @@
     <button id="page-mode" class="page-mode" onclick="toggleMode()">
       <img src="./assets/icons/sun.svg" alt="Toggle light mode" />
     </button>
+    <div class="acessibilidade-controles" role="group" aria-label="Tamanho da fonte">
+      <button type="button" onclick="mudaFonte(-2)" aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">A-</button>
+      <button type="button" onclick="resetFonte()" aria-label="Restaurar tamanho da fonte" title="Restaurar fonte">A</button>
+      <button type="button" onclick="mudaFonte(2)" aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">A+</button>
+    </div>
     <!--
     - Uma lista de receitas de sua preferência.
     - Obrigatório: Criar uma subpágina específica para Mousse de Maracujá,
@@ -70,6 +75,7 @@
       </section>
       <section>
         <img
+          id="receitas"
           class="has-box-shadow"
           src="./assets/img/receitas.png"
           alt="Imagem Conceitual Dark"

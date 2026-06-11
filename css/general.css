@@ -15,6 +15,7 @@
   --toggleBackground: 255, 255, 255;
   --boxShadow: 255, 255, 255;
   --boxShadowOpacity: 0.1;
+  --fonte-base: 16px;
 }
 
 .light-mode {
@@ -39,8 +40,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100dvh;
+  font-size: var(--fonte-base);
 }
 
 body {
@@ -88,9 +91,8 @@ nav li > .active {
 /*================= DARK/LIGHT MODE =================*/
 .page-mode {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  margin: 1rem;
+  right: 1rem;
+  bottom: 5.5rem;
   padding: 1.1rem;
   z-index: 9999;
   border: 0;
@@ -110,4 +112,40 @@ nav li > .active {
   box-shadow:
     0 4px 16px 0 rgba(var(--boxShadow), var(--boxShadowOpacity)),
     0 6px 50px 0 rgba(255, 255, 255, 0.1);
+}
+
+/*================= ACESSIBILIDADE =================*/
+.acessibilidade-controles {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.4rem;
+  color: var(--fonteAlternativa);
+  background-color: var(--bgFundo);
+  border: 1px solid rgba(var(--primaria), 0.35);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(var(--boxShadow), 0.2);
+}
+
+.acessibilidade-controles button {
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0.5rem;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid rgba(var(--primaria), 0.35);
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.acessibilidade-controles button:hover {
+  background-color: rgba(var(--primaria), 0.18);
 }

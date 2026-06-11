@@ -27,6 +27,16 @@ const images = [
     imgLight: "./assets/icons/github.svg",
     imgDark: "./assets/icons/github-light.svg",
   },
+  {
+    elemento: document.getElementById("receitas"),
+    imgLight: "./assets/img/receitas-light.png",
+    imgDark: "./assets/img/receitas.png",
+  },
+  {
+    elemento: document.getElementById("curriculum"),
+    imgLight: "./assets/img/curriculum-light.png",
+    imgDark: "./assets/img/curriculum.png",
+  },
 ];
 
 function updateModeAssets() {
@@ -57,3 +67,28 @@ function toggleMode() {
 }
 
 updateModeAssets();
+
+const root = document.documentElement;
+const tamanhoPadrao = 16; // Tamanho inicial em pixels
+
+let tamanhoAtual = tamanhoPadrao;
+root.style.setProperty("--fonte-base", `${tamanhoAtual}px`);
+
+function mudaFonte(valor) {
+  tamanhoAtual += valor;
+
+  // Define limites para não deixar a fonte ilegível
+  if (tamanhoAtual < 12) tamanhoAtual = 12;
+  if (tamanhoAtual > 32) tamanhoAtual = 32;
+
+  aplicarTamanho();
+}
+
+function resetFonte() {
+  tamanhoAtual = tamanhoPadrao;
+  aplicarTamanho();
+}
+
+function aplicarTamanho() {
+  root.style.setProperty("--fonte-base", `${tamanhoAtual}px`);
+}
